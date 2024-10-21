@@ -50,7 +50,7 @@ console.log(`Your name is ${username}`)
 
 } while (username === undefined)
 
-    if(usernames.find(username)) console.log('This username is already taken')
+    if(usernames.includes(username)) console.log('This username is already taken')
        let option1 = prompt(`do you want to continue as ${username}(Y/N)`)
 
         if(option1 === 'y' || option1 ==='Y'){
