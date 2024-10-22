@@ -43,7 +43,7 @@ const usernames = [
 ]
 let username 
 let currentUser 
-let continuePlaying = prompt('(Y/N):') 
+let continuePlaying = true
 let won = 0
 let retry = false
 
@@ -76,11 +76,31 @@ if(!username && retry === false){ //i added 1 guard check an example of validati
         retry = false
         }
     } else {
-        console.log(`Hey ${username} u are in space station named Prometheus your first mission is to go to planet c67 do you want to continue to c67 ()`)
-        
+        console.log(`Hey ${username} u are in space station named Prometheus your first mission is to go to planet c67 do you want to continue to c67 (Y/N)`)
+        continuePlaying = false
+        let willTryTwo = prompt('Y/N:')
+        if (willTryTwo.toLowerCase() === 'y'){
+            console.log('You will be transported to planet c67 in 2 seconds... engaging hyper drive')
+            console.log('You are now in planet c67 your mission is to solve this puzzle')
+            const player = {
+                name : currentUser,
+                health : 100,
+                knowlege: 1,
+                damage: 2,
+                playerAttack: function() {
+                    damage 	
+                }
+            } }  
+            const enemyOne = {
+                name : 'Lord c6',
+                Health : 3
+            }
     }
+
+    
 }while (continuePlaying)
-    console.log ("This should execute")
+    console.log ("An enemy appeared")
+
 
 
 // do {
@@ -107,4 +127,4 @@ if(!username && retry === false){ //i added 1 guard check an example of validati
 // console.log
 // const Party = prompt('')
 // console.log(`Your party is${username}`)
-// 
+//
