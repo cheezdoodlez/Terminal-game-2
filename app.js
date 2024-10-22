@@ -95,6 +95,23 @@ if(!username && retry === false){ //i added 1 guard check an example of validati
                 name : 'Lord c6',
                 Health : 3
             }
+        function playerAttack() {
+            const RockPaperScissor = [
+                'rock',
+                'paper',
+                'scissor'
+            ]
+        const randomIndex = Math.floor((Math.random()* RockPaperScissor.length))
+        
+        // console.log (RockPaperScissor[randomIndex]) // test for randomIndex function
+        }
+        let enemyChoice = playerAttack()
+        playerAttack() 
+        console.log(`${currentUser} turn!`)
+        let willTryThree = prompt('What attack will you choose?')
+        if (willTryThree.toLowerCase() === 'rock' && enemyChoice === 'paper'){
+
+        } 
     }
 
     
